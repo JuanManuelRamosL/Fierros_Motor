@@ -18,7 +18,7 @@ const Navbar = () => {
         ☰
       </button>
       <div className={`container-links ${isOpen ? "open" : ""}`}>
-        <a href="#" className="links-nav">
+        <a href="/" className="links-nav">
           Inicio
         </a>
         <a href="#servicios" className="links-nav">
