@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./nav.css";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -18,16 +18,16 @@ const Navbar = () => {
         ☰
       </button>
       <div className={`container-links ${isOpen ? "open" : ""}`}>
-        <a href="#" className="links-nav">
+        <a href="/" className="links-nav">
           Inicio
         </a>
-        <a href="#" className="links-nav">
+        <a href="#servicios" className="links-nav">
           Servicios
         </a>
-        <a href="#" className="links-nav">
-          Galería
-        </a>
-        <a href="#" className="links-nav">
+        <li>
+          <Link to="/galery">Galery</Link>
+        </li>
+        <a href="#contacto" className="links-nav">
           Contacto
         </a>
       </div>
