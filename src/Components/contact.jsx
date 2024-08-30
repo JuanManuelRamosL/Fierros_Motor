@@ -6,9 +6,10 @@ const Contact = () => {
     <section className="contact-section" id="contacto">
       <div className="contact-info">
         <h3>Información de Contacto</h3>
-        <p>📞 +34 123 456 789</p>
+        <p>📞 +54 9 11 2257411451</p>
         <p>📧 info@autostylepro.com</p>
         <p>📍 Tupungato 1784, Quilmes</p>
+        <p>📍 Rio Cuarto 4467, Pompeya</p>
         <a href="https://www.instagram.com/detailing_fmp/">
           instagram: Fierros Motor Detailing
         </a>
