@@ -8,6 +8,7 @@
 .contact-info,
 .contact-form {
     width: 45%;
+    font-size: 17px;
 }
 
 .input,
@@ -60,3 +61,13 @@
     }
 }
 
+.detailing-text {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.detailing-span {
+    display: block;
+    margin-top: 10px;
+}

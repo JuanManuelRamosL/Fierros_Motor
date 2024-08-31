@@ -1,0 +1,15 @@
+.btnwsp {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.btnwsp:hover {
+    scale: 1.03;
+    background-color: #069232;
+}

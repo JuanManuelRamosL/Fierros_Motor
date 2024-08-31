@@ -1,8 +1,14 @@
 .hero {
 	text-align: center;
 	padding: 3em;
-	background-color: #fff;
-	border-radius: 10px;
+	background-image: url('https://images.unsplash.com/photo-1468510634867-6747418867dc?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+	/* Replace with the correct path to your image */
+	background-size: cover;
+	/* Ensures the image covers the entire section */
+	background-position: center;
+	/* Centers the background image */
+	color: #fff;
+
 }
 
 .button-solicitud {
@@ -20,6 +26,23 @@
 
 .button-solicitud:hover {
 	transform: scale(1.05);
-    background-color: #b4b4b4;
-    color: #000;
+	background-color: #b4b4b4;
+	color: #000;
+}
+
+.tituloP {
+	color: #000;
+	background-color: #fff;
+	border-radius: 30px;
+	width: 300px;
+	margin: 0 auto;
+	font-size: 25px;
+}
+
+@media (max-width: 768px) {
+	.tituloP {
+		color: #000;
+		background-color: #fff;
+		border-radius: 30px;
+	}
 }
