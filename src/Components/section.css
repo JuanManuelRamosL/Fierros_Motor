@@ -4,7 +4,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 600px;
+	height: 90vh;
 	text-align: center;
 	padding: 3em;
 	color: #fff;
@@ -66,7 +66,11 @@
 	cursor: default;
 }
 
-.tituloP {
+.container-button-wsp {
+	margin-top: 1em;
+}
+
+.titulo {
 	font-size: 25px;
 	font-weight: bold;
 	text-align: center;
@@ -79,7 +83,7 @@
 	transition: 0.3s;
 }
 
-.container-titulo:hover .tituloP {
+.container-titulo:hover .titulo {
 	transform: scale(1.1);
 	background-position: 0 0;
 }
@@ -95,7 +99,7 @@
 		width: 200px;
 	}
 
-	.tituloP {
+	.titulo {
 		font-size: 20px;
 	}
 }

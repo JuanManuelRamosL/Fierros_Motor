@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.800);
+    border-bottom: 1px solid #8d0dc8;
     z-index: 10000;
 }
 
@@ -22,6 +23,7 @@
 .logo {
     width: 50px;
     height: auto;
+    border-radius: 40px;
 }
 
 .container-links {
