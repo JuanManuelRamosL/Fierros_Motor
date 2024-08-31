@@ -1,0 +1,25 @@
+.hero {
+	text-align: center;
+	padding: 3em;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+.button-solicitud {
+	margin-top: 1rem;
+	padding: 0.5rem 1rem;
+	background-color: #000;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.button-solicitud:hover {
+	transform: scale(1.05);
+    background-color: #b4b4b4;
+    color: #000;
+}
