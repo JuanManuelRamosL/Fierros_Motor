@@ -1,14 +1,34 @@
 .hero {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 600px;
 	text-align: center;
 	padding: 3em;
-	background-image: url('https://images.unsplash.com/photo-1468510634867-6747418867dc?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-	/* Replace with the correct path to your image */
-	background-size: cover;
-	/* Ensures the image covers the entire section */
-	background-position: center;
-	/* Centers the background image */
 	color: #fff;
+	overflow: hidden;
+}
 
+.hero::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('https://images.unsplash.com/photo-1468510634867-6747418867dc?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+	background-size: cover;
+	background-position: center;
+	filter: blur(2px);
+	z-index: -1;
+}
+
+.txt-spam {
+	font-weight: bold;
+	position: relative;
+	z-index: 1;
 }
 
 .button-solicitud {
@@ -22,6 +42,7 @@
 	font-weight: bold;
 	cursor: pointer;
 	transition: 0.3s;
+	position: relative;
 }
 
 .button-solicitud:hover {
@@ -30,19 +51,51 @@
 	color: #000;
 }
 
-.tituloP {
-	color: #000;
+.container-titulo {
+	width: 300px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: #fff;
 	border-radius: 30px;
-	width: 300px;
-	margin: 0 auto;
+}
+
+.container-titulo:hover {
+	box-shadow: 0px 0px 15px rgb(255, 2555, 208);
+	cursor: default;
+}
+
+.tituloP {
 	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	background-image: linear-gradient(90deg, #000 0%, #000 50%, #9b9b9b 50%, #9b9b9b 100%);
+	background-size: 200% 100%;
+	background-position: 100% 0;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	transition: 0.3s;
+}
+
+.container-titulo:hover .tituloP {
+	transform: scale(1.1);
+	background-position: 0 0;
 }
 
 @media (max-width: 768px) {
-	.tituloP {
-		color: #000;
-		background-color: #fff;
+	.container-titulo {
 		border-radius: 30px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.container-titulo {
+		width: 200px;
+	}
+
+	.tituloP {
+		font-size: 20px;
 	}
 }

@@ -1,9 +1,11 @@
 .nav {
+    position: fixed;
     width: 100%;
     height: 60px;
     display: flex;
     justify-content: space-between;
-    background-color: #000;
+    background: rgba(0, 0, 0, 0.800);
+    z-index: 10000;
 }
 
 .title {
@@ -30,15 +32,23 @@
 }
 
 .links-nav {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    color: #fff;
     text-decoration: none;
     transition: 0.3s;
+    background-image: linear-gradient(90deg, #fff 0%, #fff 50%, #9b9b9b 50%, #9b9b9b 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 0.2s;
+    z-index: 1000;
 }
 
 .links-nav:hover {
     transform: scale(1.1);
+    background-position: 0 0;
 }
 
 .menu-btn {

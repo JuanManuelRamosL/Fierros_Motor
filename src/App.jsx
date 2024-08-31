@@ -6,7 +6,8 @@ import Hero from "./Components/section";
 import Contact from "./Components/contact";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./home";
-import Galery from "./pages/galery";
+// import Galery from "./pages/galery";
+import Gallery from "./pages/galery";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/galery" element={<Galery />} />
+        <Route path="/galery" element={<Gallery />} />
       </Routes>
     </Router>
   );
