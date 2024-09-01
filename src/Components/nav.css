@@ -35,7 +35,19 @@
     align-items: center;
 }
 
+.svgs-nav {
+    width: 25px;
+}
+
+.svg-contact {
+    width: 20px;
+}
+
 .links-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;

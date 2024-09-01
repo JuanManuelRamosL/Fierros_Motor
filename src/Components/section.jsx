@@ -14,7 +14,8 @@ const Hero = () => {
         <WhatsAppButton />
       </div>
       <p className="txt-spam">
-        Devolvemos el brillo a tu vehículo con profesionalidad y pasión
+        <strong>Devolvemos</strong> el <strong>brillo</strong> a tu vehículo con{" "}
+        <strong>profesionalidad</strong> y <strong>pasión</strong>
       </p>
       <div className="container-arrow">
         <a href="#servicios">

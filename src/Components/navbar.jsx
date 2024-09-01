@@ -25,7 +25,7 @@ const Navbar = () => {
           Servicios
         </a>
         <a className="links-nav">
-          <Link to="/galery" className="links-nav">Galery</Link>
+          <Link to="/galery" className="links-nav">Galeria</Link>
         </a>
         <a href="#contacto" className="links-nav">
           Contacto

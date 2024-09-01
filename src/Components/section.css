@@ -26,7 +26,7 @@
 }
 
 .txt-spam {
-	font-weight: bold;
+	font-size: 18px;
 	position: relative;
 	z-index: 1;
 }
@@ -105,7 +105,11 @@
 }
 
 .arrow-down {
+	width: 40px;
+	height: 40px;
 	animation: move 1s infinite alternate;
+	/* background-color: #9393930c;
+	border-radius: 100%; */
 }
 
 @keyframes move {
