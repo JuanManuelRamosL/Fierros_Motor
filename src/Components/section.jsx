@@ -16,6 +16,26 @@ const Hero = () => {
       <p className="txt-spam">
         Devolvemos el brillo a tu vehículo con profesionalidad y pasión
       </p>
+      <div className="container-arrow">
+        <a href="#servicios">
+          <svg
+            width="30px"
+            height="100%"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="arrow-down"
+          >
+            <path
+              d="M7 13L12 18L17 13M7 6L12 11L17 6"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
     </section>
   );
 };

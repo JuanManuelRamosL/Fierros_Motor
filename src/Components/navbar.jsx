@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="nav">
       <div className="container-title">
-        <h1 className="title">Fierros Motor</h1>
+        <h1 className="title-nav">Fierros Motor</h1>
         <img src="/logo.jpeg" alt="logo-auto" className="logo" />
       </div>
       <button className="menu-btn" onClick={toggleMenu}>

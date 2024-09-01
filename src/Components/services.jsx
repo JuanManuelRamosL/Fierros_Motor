@@ -5,7 +5,7 @@ const services = [
   {
     title: "Lavado Interior y Exterior",
     description: "Lorem ipsum dolor sit amet...",
-    img: "/galery1.jpeg",
+    img: "/galery3.jpeg",
   },
   {
     title: "Nuestros Trabajos",
@@ -21,18 +21,20 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="servicios">
+    <section id="servicios" className="services-section">
       <h2 className="services-title">Nuestros Servicios</h2>
       <div className="services-container">
         {services.map((service, index) => (
-          <div key={index} className="card">
+          <div key={index} className="service-card">
             <div className="card-image">
               {service.img && (
                 <img src={service.img} alt={service.title} className="image" />
               )}
             </div>
-            <h3>{service.title}</h3>
-            <p>{service.description}</p>
+            <div className="service-info">
+              <h3 className="title-services-card">{service.title}</h3>
+              <p className="txt-cards-services">{service.description}</p>
+            </div>
           </div>
         ))}
       </div>

@@ -1,13 +1,18 @@
-#servicios {
-    margin: 0rem 0;
-    background-color: #eee;
-    padding-top: 20px;
-    padding-bottom: 50px;
+.services-section {
+    /* background-color: #1c1c1c; */
+    /* background-color: rgba(31, 41, 55, 1);
+    background: #0f0c29;
+    background: linear-gradient(to right bottom, #443e89, #0f0c29); */
+    background-color: #F0F4F9;
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
 }
 
 .services-title {
-    text-align: center;
-    margin: 2rem 0;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #1f1f1f;
 }
 
 .services-container {
@@ -16,55 +21,51 @@
     flex-wrap: wrap;
 }
 
-.card {
-    width: 28%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    background-color: #fff;
+.service-card {
+    height: 600px;
+    /* background-color: #023252;
+    background-color: #2e2a5a;
+    background: rgba(0, 0, 0, 0.800); */
+    background: #fff;
+    /* border: 1px solid #8d0dc8; */
     border-radius: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin-top: 20px;
-}
-
-.card-image {
-    min-width: 220px;
+    /* border: 1px solid rgb(84 90 106); */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
     max-width: 300px;
-    width: auto;
-    height: auto;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin-bottom: 1rem;
+    margin: 20px;
+    transition: transform 0.3s;
+    padding: 20px;
 }
 
-.image {
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.card-image img {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 10px;
-    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
-@media (max-width: 768px) {
-    .services-container {
-        flex-direction: column;
-        align-items: center;
-    }
+.service-info {
+    padding: 20px;
+}
 
-    .card {
-        width: 80%;
-    }
+.txt-cards-services {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
 
-    .card-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-    }
+.title-services-card {
+    font-size: 1.5rem;
+    text-align: left;
+    color: #000;
+}
+
+.txt-cards-services {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444746;
 }
