@@ -1,10 +1,15 @@
 .gallery-container {
-    padding: 20px;
+    padding-top: 60px;
+    background-color: #F0F4F9;
 }
 
-h2 {
+.titles {
     margin-top: 40px;
     text-align: center;
+}
+
+hr {
+    width: 90%;
 }
 
 .gallery-section {
@@ -12,19 +17,74 @@ h2 {
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
+    margin-bottom: 60px;
 }
 
 .gallery-section img {
     width: 300px;
     height: 200px;
-    object-fit: cover;
+    padding: 8px;
+    object-fit: contain;
+    border: 1px solid #9c9c9c;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
     .gallery-section img {
-        width: 100%;
+        width: 80%;
         height: auto;
     }
+}
+
+/* Modal Styles */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 80%;
+    margin-top: 70px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+    cursor: zoom-in;
+}
+
+.modal-content.zoom-out {
+    cursor: zoom-out;
+}
+
+.modal-content:active {
+    cursor: grabbing;
+}
+
+.close-button {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.05);
 }

@@ -25,7 +25,7 @@ const Contact = () => {
         <h3>Sobre Nosotros</h3>
         <p className="detailing-text">
           🚗 En <strong>Fierros Motor Detailing</strong>, nos apasiona el
-          <strong>cuidado</strong> y la <strong>estética</strong> de los
+          <strong> cuidado</strong> y la <strong>estética</strong> de los
           automóviles. Ofrecemos servicios de detailing de{" "}
           <strong>alta calidad</strong> para asegurar que tu vehículo se vea
           <strong> impecable.</strong>
