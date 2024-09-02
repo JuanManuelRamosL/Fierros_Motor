@@ -1,7 +1,7 @@
 import React from "react";
 import "./wspButton.css";
 
-const WhatsAppButton = () => {
+const WhatsAppButton = ({ onClick }) => {
   const phoneNumber = "5492257411451"; // Reemplaza con el número que desees
 
   const openWhatsApp = () => {
